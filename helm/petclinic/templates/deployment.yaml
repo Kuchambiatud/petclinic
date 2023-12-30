@@ -3,7 +3,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: {{ .Value.Namespace }}
+  namespace: {{ .Values.Namespace }}
   name: petclinic-deployment
 spec:
   replicas: 1
